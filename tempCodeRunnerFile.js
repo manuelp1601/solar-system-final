@@ -1,0 +1,1 @@
+    console.log(`Calculating weight for: ${planetName} with user weight: ${userWeight}`);

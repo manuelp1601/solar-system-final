@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <h1> solar system Weight Calculator</h1>
+            <form id="weight-calculator">
+                <!-- Text Input for Weight -->
+                <div class="form-group">
+                    <input type="number" id="user-weight" placeholder="Your weight on Earth (Pounds)">
+                </div>
+                
+                <!-- Planet Selector -->
+                <select id="planet-selector">
+                    <option value='Mercury'>Mercury</option>
+                    <option value='Venus'>Venus</option>
+                    <option value='Earth'>Earth</option>
+                    <option value='Mars'>Mars</option>
+                    <option value='Jupiter'>Jupiter</option>
+                    <option value='Saturn'>Saturn</option>
+                    <option value='Uranus'>Uranus</option>
+                    <option value='Neptune'>Neptune</option>
+                </select>
+                <!-- Calculate Button -->
+                <div class="form-group">
+                    <button type="button" onclick="calculateWeight()">Calculate</button>
+                </div>
+            </form>
+            <div id="planet-image-container">
+                <img id="planet-image" src="" alt="Selected Planet" style="display:none;"> <!-- Our celestial guest -->
+            </div>
+            <div id="result"></div>
+
+            <div id="explanation">
+                <h2>Understanding Your weight across the Cosmos</h2>
+                <p>
+                    in this interactive weight calculator you are able to see your weight on different
+                    planets, but why do we have a different weight on a different planet?
+                    <br>
+                    This happens because each planet in the solar systems possesses a unique gravitational pull,
+                    this is primarily determined by it's mass and radius. A good example of this is Jupiter,
+                    the largest planet in our solar system, it exerts a much stronger gravitational forcer than earth,
+                    making you heavier if you manage to get to it's surface.
+                    <br>
+                    This project aims to offer a tangible sense of how your mass, can weight differently accross the solar
+                    system, thanks to the varying gravitational forces, it's a simple yet profound way to demostrate gravity,
+                    and exploring this elemental forces help us understand a bit better the forces that form our solar system and our universe!
+
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>...</footer>
+    
+    <script src="calc.js"></script>
+</body>
+</html>
