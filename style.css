@@ -79,9 +79,13 @@ select {
     border: 2px solid #fff; /* White border, adjust color as needed */
     border-radius: 10px; /* Rounded corners */
     font-size: 30px; /* Larger font size for better readability */
-    color: #FFF; /* Text color */
+    color: black; /* Text color */
     cursor: pointer; /* Changes the cursor to a pointer on hover */
     margin-bottom: 20px;
+}
+select, option {
+    color: black; /* Or any color that contrasts well with your background */
+    background-color: white;
 }
 
 select:focus {
